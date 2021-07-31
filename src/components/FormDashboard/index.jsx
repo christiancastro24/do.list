@@ -14,6 +14,7 @@ export const Dashboard = ({ autenticado }) => {
 
     const dispatch = useDispatch()
 
+
     if(!autenticado) {
         history.push("/")
     }

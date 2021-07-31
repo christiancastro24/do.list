@@ -3,7 +3,6 @@ import { toast } from "react-toastify"
 
 
 export const addNewItemThunk = (item) => (dispatch, getStore) => {
-
     const { list } = getStore()
 
     const itemRepeated = list.find(f => f === item)

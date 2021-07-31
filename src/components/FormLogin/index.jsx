@@ -23,6 +23,7 @@ export const FormLogin = ({ autenticado, setAutenticado }) => {
     })
 
     const onSub = (data) => {
+
         axios.post("https://capstone-class-app.herokuapp.com/login/", data)
         .then(res => {
 
@@ -35,7 +36,7 @@ export const FormLogin = ({ autenticado, setAutenticado }) => {
             return history.push("/dashboard")
 
         })
-        .catch(res => toast.error('Email ou senha inválido'))
+        .catch(_ => toast.error('Email ou senha inválido'))  
     }
 
     if(autenticado) {

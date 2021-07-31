@@ -29,7 +29,7 @@ export const Routes = () => {
 
                 <Route path="/register"> <FormRegister autenticado={autenticado}/> </Route>
 
-                <Route path="/login"> <FormLogin autenticado={autenticado} setAutenticado={setAutenticado}/> </Route>
+                <Route path="/login"> <FormLogin autenticado={autenticado} setAutenticado={setAutenticado} /> </Route>
             </Switch>
         </div>
     )

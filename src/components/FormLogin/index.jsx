@@ -28,8 +28,6 @@ export const FormLogin = ({ autenticado, setAutenticado }) => {
 
             const { accessToken } = res.data
 
-            console.log(res.data.access)
-
             localStorage.setItem("@TodoList:user", JSON.stringify(accessToken))
 
             setAutenticado(true)
@@ -56,6 +54,7 @@ export const FormLogin = ({ autenticado, setAutenticado }) => {
                   variant="outlined" 
                   {...register("email")}
                 />
+
                 <br /><br />
 
                 <TextField 

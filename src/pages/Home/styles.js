@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    @media (min-width: 300px) and (max-width: 568px){
+    @media (min-width: 280px) and (max-width: 568px){
             padding-top: 45%;
             width: 100%;
             color: #000;
@@ -18,7 +18,7 @@ export const Container = styled.div`
 
 
     h1 {
-                font-size: 40pt;
+                font-size: 38pt;
                 color: #fff;
                 letter-spacing: 2px;
   text-shadow:   0px -6px 0 #212121,

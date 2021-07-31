@@ -7,7 +7,7 @@ export const ContainerRegister = styled.form `
         width: 15rem;
     }
 
-    @media (min-width: 300px) and (max-width: 568px) {
+    @media (min-width: 280px) and (max-width: 568px) {
         padding-top: 30%;
     }
 
@@ -22,7 +22,7 @@ export const ContainerRegister = styled.form `
 
 export const ImageAndForm = styled.div`
 
-@media (min-width: 300px) and (max-width: 1000px){
+@media (min-width: 280px) and (max-width: 1000px){
         img {
             display: none;
         }

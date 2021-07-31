@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux"
 import { removeItemThunk } from "../../store/modules/TodoList/thunks"
-import { Items } from "./styles"
+import { Items, ContainerItems } from "./styles"
 import { Button } from "@material-ui/core"
 import { useHistory } from "react-router-dom"
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
@@ -23,6 +23,7 @@ export const Dashboard = ({ autenticado }) => {
             {list.map((items, index) => {
                 
                 return (
+                    <ContainerItems>
                     <Items key={index}>
                         <h5>{items.length > 26 ? items.slice(0, 26) + "..." : items}</h5> 
                         {" "}
@@ -33,6 +34,7 @@ export const Dashboard = ({ autenticado }) => {
                             <DeleteForeverIcon />
                           </Button>
                     </Items>
+                </ContainerItems>
                 )
             })}
         </div>

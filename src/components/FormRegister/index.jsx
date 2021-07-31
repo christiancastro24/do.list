@@ -32,7 +32,7 @@ export const FormRegister = ({ autenticado }) => {
             return history.push("/login")
 
         })
-        .catch(res => toast.error('Email já cadastrado'))
+        .catch(_ => toast.error('Email já cadastrado'))
     }
     
     if(autenticado) {
@@ -99,12 +99,6 @@ export const FormRegister = ({ autenticado }) => {
                   variant="outlined" 
                   {...register("lastname")} 
                   />
-                
-                <br /><br />
-
-                
-
-                
 
                 <br /><br />
                 <Button color="primary" variant="contained" type="submit">Cadastre-se</Button>

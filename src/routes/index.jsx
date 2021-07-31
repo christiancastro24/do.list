@@ -22,6 +22,7 @@ export const Routes = () => {
     return (
         <div>
             <Switch>
+                
                 <Route exact path="/"> <Home /> </Route>
 
                 <Route path="/dashboard"> <Input /> <Dashboard autenticado={autenticado}/>   </Route>

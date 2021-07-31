@@ -18,8 +18,8 @@ export const Home = () => {
 
     return (
         <Container>
-            <h1><span style={firstSpan}>T</span>ODO<span style={secondSpan}>.</span>LIS<span style={thirdSpan}>T</span></h1>
-            <h4>Todo list é um aplicativo para monitorar suas tarefas do dia-a-dia</h4>
+            <h1><span style={firstSpan}>D</span>O<span style={secondSpan}>.</span>TASK<span style={thirdSpan}>S</span></h1>
+            <h4>Todo list é um aplicativo para criar suas tarefas do diárias</h4>
 
             <Button style={firstButton} variant="contained" onClick={() => handleGo("/register")}>Cadastre-se</Button>
             {" "}

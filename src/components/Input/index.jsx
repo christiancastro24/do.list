@@ -20,19 +20,33 @@ export const Input = () => {
 
     const logout = () => {
         localStorage.removeItem("@TodoList:user")
-        setTimeout(() => history.go(0), 1500)
+        setTimeout(() => history.go(0), 1000)
     }
 
     return (
         <div>
             <Container>
-             <button onClick={logout}>Logout</button>
-                <h1><span style={{color: "#0095f6"}}>T</span>ODO LIS<span style={{color: "#1FDED4"}}>T</span></h1>
+             <Button style={{position: "absolute", top: "0.5rem", left: "0.8rem", height: "1.8rem", backgroundColor: "#801818", color: "#fff"}} variant="contained" onClick={logout}>Logout</Button>
+        
+                <h1><span style={{color: "#0095f6"}}>D</span>O<span style={{color: "pink"}}>.</span>TASK<span style={{color: "#1FDED4"}}>S</span></h1>
             </Container>
             
             <ContainerInput>
-                <TextField label="Sua tarefa..." size="small" variant="filled" value={item} onChange={evt => setNewItem(evt.target.value)} />{" "}
-                    <Button variant="contained" color="primary" onClick={addItem}>Adicionar</Button>
+                <TextField label="Adicione uma tarefa..." size="small" variant="filled" value={item} onChange={evt => setNewItem(evt.target.value)} />{" "}
+
+                    {item === "" 
+                    ?
+                    <Button 
+                      disabled 
+                      variant="contained" 
+                      color="primary" 
+                      onClick={addItem}>Adicionar</Button>
+                     :
+                     <Button 
+                       variant="contained" 
+                       color="primary" 
+                       onClick={addItem}>Adicionar</Button>
+                    }
             </ContainerInput>
         </div>
     )
